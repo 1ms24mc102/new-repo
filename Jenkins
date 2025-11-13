@@ -1,0 +1,25 @@
+pipeline{
+  agent any
+  tools{
+    jdk "jdk21"
+  }
+  stages{
+    stage{
+      steps('checkout'){
+        git branch:'main' url:'https://github.com/1ms24mc102/new-repo'
+      }
+    }
+    stage{
+      steps('Compile'){
+        echo "Compiling..."
+        sh "javac Hello.java"
+      }
+    }
+    stage{
+      steps('Run'){
+        echo "Running..."
+        sh "java Hello"
+      }
+    }
+  }
+}
