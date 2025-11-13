@@ -4,19 +4,19 @@ pipeline{
     jdk "jdk21"
   }
   stages{
-    stage{
-      steps('checkout'){
+    stage('checkout'){
+      steps{
         git branch:'main',url:'https://github.com/1ms24mc102/new-repo'
       }
     }
-    stage{
-      steps('Compile'){
+    stage('Compile'){
+      steps{
         echo "Compiling..."
         sh "javac Hello.java"
       }
     }
-    stage{
-      steps('Run'){
+    stage('Run'){
+      steps{
         echo "Running..."
         sh "java Hello"
       }
