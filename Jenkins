@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage{
       steps('checkout'){
-        git branch:'main' url:'https://github.com/1ms24mc102/new-repo'
+        git branch:'main',url:'https://github.com/1ms24mc102/new-repo'
       }
     }
     stage{
