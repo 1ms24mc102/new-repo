@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	stages{
-		stage("Git Start"){
+		stage(/Git-Start){
 			step{
 				echo "From Git pipeline started"
 				git branch:'main',url:"https://github.com/1ms24mc102/new-repo/"
