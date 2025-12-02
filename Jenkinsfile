@@ -1,8 +1,5 @@
 pipeline{
 	agents any
-	tools{
-		jdk:21
-	}
 	stages{
 		stage("Git Start"){
 			step{
