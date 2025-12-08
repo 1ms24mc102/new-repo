@@ -15,18 +15,18 @@ pipeline {
         }
         stage('Git End') {
             steps {
-                echo 'Git pipeline completed'
+                echo 'Git pipeline completed...'
             }
         }
         stage('Compiling') {
             steps {
-                echo 'Compiling source code'
+                echo 'Compiling source code...'
                 sh 'javac Hello.java'
             }
         }
         stage('Running') {
             steps {
-                echo 'Running unit test'
+                echo 'Running unit test...'
                 sh 'java Hello'
             }
         }
