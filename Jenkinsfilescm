@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Git End') {
             steps {
-                echo 'Git pipeline completed...'
+                echo 'Git pipeline not completed...'
             }
         }
         stage('Compiling') {
