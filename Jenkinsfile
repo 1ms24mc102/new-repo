@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Git End') {
             steps {
-                echo 'Git pipeline completed'
+                echo 'Git pipeline completed...'
             }
         }
         stage('Compiling') {
